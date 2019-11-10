@@ -10,7 +10,7 @@ def get_solve(uname):
 
 
 def get_vj_solve(uname):
-    url = "https://vjudge.net/user/" + uname
+    url = "https://vjudge.net/user/" + str(uname)
     score_file = datetime.date.today().strftime('%Y-%m') + "-Scores.csv"
     cavil = open(score_file, "a")
     writer = csv.writer(cavil)
